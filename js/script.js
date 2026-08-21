@@ -57,7 +57,7 @@ function criarCard(personagem) {
 }
 
 // Botão
-btnCarregar.addEventListener("click", carregarPersonagens);
+btnCarregar.addEventListener("pointerup", carregarPersonagens);
 
 // Carrega os primeiros 50
 carregarPersonagens();
