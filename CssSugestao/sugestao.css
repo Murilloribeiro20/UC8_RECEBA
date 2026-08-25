@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(253, 225, 190)
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.btn {
+    background: #B25B2D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    height: 60px;
+
+}
+
+.btn {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.linha {
+    border: none;
+    height: 20px;
+    background-color: #e2ddd2;
+    margin-top: -1px;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 10px #5a5957;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #efe8d8;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+}
+
+.categorias button {
+    border: none;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
+    transition: .3s;
+}
+
+.categorias button:hover {
+    transform: translateY(-5px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+.nota {
+    padding: 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    padding: 15px;
+}
+
+.preco {
+    display: block;
+    color: green;
+    font-weight: bold;
+    padding: 0 15px 15px;
+}
+
+.card button {
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 15px;
+    background: #a35225;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.card button:hover {
+    transform: translateY(-3px);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 40px;
+    background: #a35225;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+    }
+
+    .categorias button {
+        width: 90%;
+    }
+}

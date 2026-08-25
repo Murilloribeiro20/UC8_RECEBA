@@ -4,7 +4,7 @@
     "short_name": "Mundo Disney",
     "description": "Mostra em cards os personagens do mundo Disney, com Api da Disney.",
     "lang": "pt-BR",
-    "start_url": "./",
+    "start_url": "GitHubMurilloribeiro20/DISNEYRECEBA.git",
     "scope": "./",
     "display": "standalone",
     "orientation": "portrait",

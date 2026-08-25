@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: rgb(253, 225, 190);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.titulo{
+    background-color: #d8d0c3;
+    width: 260px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 34px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width: 250px;
+    display:flex;
+    right: 50px;
+    position: absolute;
+    margin-top: -50px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.texto{
+    width: 40%;
+}
+
+.texto h2{
+    font-size: 27px;
+    margin: 0;
+}
+
+.texto ul{
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.texto ol{
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.texto p{
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.foto{
+    width: 600px;
+    height: 500px;
+    margin-top: 180px;
+    border-radius: 10px;
+}
