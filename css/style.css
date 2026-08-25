@@ -1,7 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(253, 225, 190);
     margin: 0;
+    overflow-x: hidden;
 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 header{
@@ -9,15 +19,20 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo{
     width: 150px;
+    max-width: 40vw;
 }
 
 nav{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a{
@@ -40,13 +55,21 @@ main{
     box-shadow: 0 4px 8px rgba(2, 2, 2, 0.3);
     border-radius: 20px;
     margin: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
+.texto{
+    flex: 1 1 350px;
+    min-width: 0;
+}
 
 .secondimg{
     width: 850px;
+    max-width: 100%;
     height: auto;
     border-radius: 40px;
+    flex: 1 1 350px;
 }
 
 h1{
@@ -62,8 +85,10 @@ p{
 }
 .icones{
     display:flex;
+    flex-wrap: wrap;
     gap:40px;
     padding:20px 70px;
+    justify-content: center;
 
 }
 .item{
@@ -72,6 +97,7 @@ p{
     gap:10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius:20px;
+    padding: 10px 15px;
 
 }
 
@@ -97,6 +123,7 @@ p{
 .avaliação{
     background-color: rgb(153, 151, 148);
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     margin: 20px auto;
     border-radius: 60px;
@@ -110,6 +137,7 @@ p{
 }
 .avaliacao-texto2{
     display: flex;
+    flex: 1 1 300px;
     justify-content: right;
     align-items: center;
     font-size: 35px;
@@ -122,10 +150,12 @@ p{
     margin: 20px auto;
     border-radius: 25px;
     display: flex;
-    align-items: stretch;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-start;
     padding: 10px 30px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    gap: 15px;
 }
 
 .bolabranca{
@@ -205,5 +235,170 @@ text-decoration: none;
 transition: 0.3s;
 }
 
+/* ===================== RESPONSIVO ===================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    main{
+        padding: 40px 30px;
+    }
+
+    h1{
+        font-size: 38px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+
+    .apresentacao{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .apresentacao2{
+        font-size: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .avaliacao-texto2{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+/* Tablets pequenos / celulares grandes */
+@media (max-width: 768px) {
+    header{
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav{
+        gap: 12px;
+        font-size: 14px;
+    }
+
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .icones{
+        padding: 20px 20px;
+        gap: 20px;
+    }
+
+    .item{
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .avaliação{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+    .avaliacao-texto2{
+        justify-content: center;
+        padding: 0 20px 20px;
+    }
+
+    .feedback{
+        flex-direction: column;
+        text-align: center;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    .bolabranca{
+        margin: 0 auto;
+    }
+
+    .feedback-texto{
+        text-align: center;
+    }
+
+    .botoes{
+        margin: 0 auto;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .logo{
+        width: 110px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .btn{
+        font-size: 18px;
+        padding: 8px 14px;
+    }
+
+    .apresentacao{
+        font-size: 28px;
+    }
+
+    .apresentacao2{
+        font-size: 16px;
+    }
+
+    .avaliacao-texto{
+        font-size: 20px;
+    }
+
+    .avaliacao-texto2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .jacquin{
+        width: 130px;
+        margin: 15px;
+    }
+
+    .feedback-texto{
+        font-size: 18px;
+    }
+
+    .botoes label{
+        width: 90px;
+        height: 70px;
+        font-size: 40px;
+        border-radius: 30px;
+    }
+
+    .bolabranca{
+        width: 60px;
+        height: 60px;
+    }
+
+    .coracao{
+        width: 40px;
+    }
+}
 
 
