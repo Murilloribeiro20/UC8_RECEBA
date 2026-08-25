@@ -1,36 +1,36 @@
 {
-    "id": "Mundo-Disney",
-    "name": "Mundo Disney",
-    "short_name": "Mundo Disney",
-    "description": "Mostra em cards os personagens do mundo Disney, com Api da Disney.",
+    "id": "https://murilloribeiro20.github.io/UC8_RECEBA/",
+    "name": "Bread With Egg Two",
+    "short_name": "Bread With Egg Two",
+    "description": "Receitas de pão com ovo e café da manhã",
     "lang": "pt-BR",
-    "start_url": "GitHubMurilloribeiro20/DISNEYRECEBA.git",
+    "start_url": "https://murilloribeiro20.github.io/UC8_RECEBA/",
     "scope": "./",
     "display": "standalone",
     "orientation": "portrait",
-    "background_color": "#DDF2FD",
-    "theme_color": "#DDF2FD",
+    "background_color": " rgb(253, 225, 190)",
+    "theme_color": " rgb(253, 225, 190)",
     "icons": [
         {
-            "src": "./icons/disney192.png",
+            "src": "./imagens/192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "./icons/disney512.png",
+            "src": "./imagens/512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "./icons/disney192.png",
+            "src": "./imagens/192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "./icons/disney512.png",
+            "src": "./imagens/512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
